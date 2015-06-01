@@ -50,7 +50,7 @@ void loop (){
     buttonState[SWITCH_SELECT] = Goble.readSwitchSelect();
     buttonState[SWITCH_START]  = Goble.readSwitchStart();
 
-    //enable to map the value from (1~128) to (-255~255)
+    //enable to map the value from (1~255) to (-255~255)
     int SpeedX=2*joystickX-256;
     int SpeedY=2*joystickY-256;
     Serial.print("Speed: ");
