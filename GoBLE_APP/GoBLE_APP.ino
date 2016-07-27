@@ -23,7 +23,7 @@ int RightWheelSpeed;
 //GoBle configuration library, help user to identify control button and stick on Gamepad
 #include "GoBLE.h"
 int joystickX, joystickY;
-int buttonState[6];
+int buttonState[MAXBUTTONID];
 
 int ledPin = 13;
 
@@ -41,7 +41,7 @@ void loop (){
 //    Serial.print("joystickX: ");
 //    Serial.print(joystickX);
 //    Serial.print("joystickY: ");
-//    Serial.println(joystickX);
+//    Serial.println(joystickY);
 
     buttonState[SWITCH_UP]     = Goble.readSwitchUp();
     buttonState[SWITCH_LEFT]   = Goble.readSwitchLeft();
