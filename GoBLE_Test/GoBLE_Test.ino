@@ -2,7 +2,7 @@
 #include "GoBLE.h"
 
 int joystickX, joystickY;
-int buttonState[6];
+int buttonState[MAXBUTTONID];
 
 void setup(){
   Goble.begin();
