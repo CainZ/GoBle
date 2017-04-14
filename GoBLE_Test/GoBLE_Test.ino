@@ -2,7 +2,7 @@
 #include "GoBLE.h"
 
 int joystickX, joystickY;
-int buttonState[6];
+int buttonState[7];
 
 void setup(){
   Goble.begin();

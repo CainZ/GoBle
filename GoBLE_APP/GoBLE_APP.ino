@@ -14,7 +14,7 @@
  * SWITCH_START   -- 6
  ********************************************************************/
 #include "DFMobile.h"
-DFMobile Robot (4,5,7,6);
+DFMobile Robot (7,6,4,5);
 #include "Metro.h"
 // Speed is modified by mapping vlaue of GamePad Stick
 int LeftWheelSpeed;
@@ -23,12 +23,12 @@ int RightWheelSpeed;
 //GoBle configuration library, help user to identify control button and stick on Gamepad
 #include "GoBLE.h"
 int joystickX, joystickY;
-int buttonState[6];
+int buttonState[7];
 
 int ledPin = 13;
 
 void setup (){
-  Robot.Direction (LOW,HIGH);// (left direction,right direction); 
+  Robot.Direction (LOW,LOW);// (left direction,right direction); 
   pinMode(ledPin,OUTPUT);
   Goble.begin();
   Serial.begin(115200);
