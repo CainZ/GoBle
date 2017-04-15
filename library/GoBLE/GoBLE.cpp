@@ -186,7 +186,7 @@ void  _GoBLE::bleDataReceiver() {
     // auto adjust the command length based on the button command value
     if (bleQueue.count() == PACKBUTTONSIGN) {
       // max button input at one moment should less than 6 buttons
-      if (inputByte > 0 && inputByte < MAXBUTTONNUMBER) {
+      if (inputByte > 0 && inputByte <= MAXBUTTONNUMBER) {
 
         // default command length + button number
         rDataPack.commandLength = DEFAULTPACKLENGTH + inputByte;
